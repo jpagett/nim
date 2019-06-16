@@ -21,9 +21,7 @@ class GameWindow(QWidget):
         self.resize(400,200)
         self.setWindowTitle(name)
         icon_name = 'coin_stack.png'
-        script_path = os.path.dirname(os.path.realpath(__file__))
-        icon_path = os.path.join(script_path,icon_name)
-        self.setWindowIcon(QIcon(icon_path))
+        self.setWindowIcon(QIcon(icon_name))
 
         grid = QGridLayout()
         self.setLayout(grid)
